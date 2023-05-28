@@ -1,0 +1,88 @@
+{
+    "lezduit": {
+        "BadPlaystyle": [
+            "Support who play so aggressive that he dont even know carry will catch upto him or not",
+            "This person always blame lost game on ping",
+            "To eager to learn shit but lacks to admit what is wrong with him"
+        ],
+        "Personality" : [
+            "He is a fucking show off",
+            "Have a coffee machine that spits out kuwaiti dinar",
+            "Have a pen that he never uses",
+            "Have a expensive watch but still uses mobile to watch time",
+            "He thinks he is the ladies man"
+        ],
+        "Behaviour" : [
+            "He is a fucking Bully",
+            "He always fight with darky for no reason",
+            "Blames everything on darky",
+            "A arrogant arabic king of camel farm"
+        ]
+    },
+    "darky": {
+        "BadPlaystyle": [
+            "Keep on playing Revnant but misses auto attack and then get fucked by under level sparrow",
+            "This dude have no map awareness",
+            "Bad offlaner who threw games by giving kills to enemy Sevarog"
+        ],
+        "Personality" : [
+            "Nice dude but gets angry on others for his own mistakes",
+            "He is so stupid he dont even realize that",
+            "Make loud noises when playing games stated by his own wife"
+        ],
+        "Behaviour" : [
+            "Stupidly intelligent guy",
+            "Fight with lezduit every time lezduit wants him to improve",
+            "Thinks he is intelligent but believe me he is as dumb as a turtle chasing rabbit"
+        ]
+    },
+    "ridwaano": {
+        "BadPlaystyle": [
+            "Thinks he is best steel, tries to go in fangtooth pit alone with steel ultimate",
+            "A play style unique enough that nobody understand why he is fighting and still gets them",
+           "Always try to carry the team, fucking try hard guy in the team",
+           "He won against Nilchay and he still dont understand how a fucking steel can take care of crunch"
+        ],
+        "Personality" : [
+            "A big dude that you should think before you say something",
+            "Bald sexy man, same as steel",
+            "He is a Family man"
+        ],
+        "Behaviour" : [
+            "He walks around with his dick out his pants",
+            "Best buddies to his friends, darky consider his advise to buy samsung monitor G7 and bought another monitor",
+           "He thinks he knows everything"
+        ]
+    },
+    "mikey": {
+        "BadPlaystyle": [
+            "Play phase like he is the best support",
+            "Only darky thinks he is the best support, nilchay have other opinions",
+            "Misses stuns on dekker but then get impossible stun, inconsistent like darky"
+        ],
+        "Personality" : [
+            "Yet to know what and who is this guy nobody wants to know though",
+            "A danish lad with voice that lezduit struggles to understand"
+        ],
+        "Behaviour" : [
+            "He screams a lot when somebody complains",
+            "The most calm person when playing with darky"
+        ]
+    },
+    "nilchay": {
+        "BadPlaystyle": [
+            "He thinks he is the best crunch",
+            "Thinks kingsbane is the best card on crunch for sustain",
+            "Really good carry but complains a lot"
+        ],
+        "Personality" : [
+            "A 22 year old kid wanna be a man",
+            "Dont know why everybody hates him",
+            "There is something mysterious about him and razor dave. (Dont ask you will be kicked out of server)"
+        ],
+        "Behaviour" : [
+            "A really loud guy but nice",
+            "Thinks he is the best jungler"
+        ]
+    }
+  }
