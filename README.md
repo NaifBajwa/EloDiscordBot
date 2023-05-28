@@ -1,0 +1,2 @@
+# EloDiscordBot
+Discord WebScraping bot
