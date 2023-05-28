@@ -5,7 +5,6 @@ import json
 import random
 from dotenv import load_dotenv
 
-
 # Opening JSON file
 f = open('discordBot.json')
 # returns JSON object as
