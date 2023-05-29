@@ -4,6 +4,7 @@ import elo
 import json
 import random
 from dotenv import load_dotenv
+import openai
 
 # Opening JSON file
 f = open('discordBot.json')
@@ -21,21 +22,21 @@ omedacity = elo.OmedaCityWeb()
 
 intents = discord.Intents.default()
 intents.all()
-print(intents)
+#print(intents)
 
 # instantiate discord client
 client = discord.Client(intents=intents)
 
+# get bot token from .env and run client
+# has to be at the end of the file
+#botToken = os.environ['TOKEN']
+load_dotenv()
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 # discord event to check when the bot is online
 @client.event
 async def on_ready():
   print(f'{client.user} is now online!')
-
-
-# get bot token from .env and run client
-# has to be at the end of the file
-#botToken = os.environ['TOKEN']
 
 
 @client.event
@@ -48,11 +49,22 @@ async def on_message(message):
   # lower case message
   #message_content = message.content.lower()
 
-  if message.content.startswith(f'$hello'):
+  if message.content.startswith(f'$chat'):
+    model_engine = "gpt-3.5-turbo"
+    prompt = message.content.split('$chat', 1)[1]
+    completion = openai.ChatCompletion.create(
+      model="gpt-3.5-turbo",
+      messages=[
+        {"role": "user", "content": prompt}
+      ],
+      temperature=0.2,
+      max_tokens=1024
+    )
     embed = discord.Embed(
       colour=discord.Colour.random(),
-      description="Hello there! I\'m the fidgeting bot from Casual's server",
-      title="ELO Bot")
+      description=completion.choices[0].message.content,
+      title="ChatGPT"
+    )
     await message.channel.send(embed=embed)
 
   if message.content.startswith(f'$darky'):
@@ -176,5 +188,4 @@ async def on_message(message):
       url="https://omeda.city/players/8647f25d-b864-4aad-ae9c-bc8782613d38")
     await message.channel.send(embed=embed)
 
-load_dotenv()
 client.run(os.getenv('TOKEN'))
